@@ -1,0 +1,87 @@
+baseURL: https://merlinus.me/
+title: Merlinus
+theme: [PaperMod]
+languageCode: 'en'
+
+enableInlineShortcodes: true 
+enableEmoji: true 
+enableRobotsTXT: true 
+hasCJKLanguage: true 
+paginate: 10  
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+# relativeURLs: true
+mainsections: ["posts"]
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: About
+      url: about/
+      weight: 10
+    - name: Books
+      url: books/
+      weight: 25
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production 
+  description: Keep simplicity
+  author: Merlinus
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  TocOpen: false
+  ShowFullTextinRSS: true 
+  hideFooter: false 
+  ShowLastMod: false
+
+  homeInfoParams:
+    Title: ""
+    Content: >
+      
+params:
+  profileMode:
+    enabled: true
+    title: "Merlinus" 
+    subtitle: "Keep it simple. End unproductive discussions and start creating value."
+    imageUrl: "https://img.merlinus.me/file/1735368780827_profile.png" 
+    imageTitle: "Merlinus" 
+    imageWidth: 120 
+    imageHeight: 120 
+  socialIcons:
+    - name: "Twitter"
+      url: "https://x.com/Merlinus0101101"
+    - name: "Email"
+      url: "mailto:merlinus01001@proton.me"
+    - name: "RSS"
+      url: "index.xml"
+    
+
+
+  assets:
+    disableHLJS: false
